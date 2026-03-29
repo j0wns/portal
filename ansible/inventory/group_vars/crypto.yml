@@ -1,0 +1,6 @@
+---
+
+role_packages:
+  - ca-certificates
+  - wireguard
+  - certbot

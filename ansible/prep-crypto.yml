@@ -1,0 +1,8 @@
+---
+- name: Prepare crypto nodes
+  hosts: "{{ nodes | default('crypto') }}"
+  become: true
+  gather_facts: true
+
+  roles:
+    - crypto

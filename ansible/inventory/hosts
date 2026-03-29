@@ -1,0 +1,24 @@
+all:
+  hosts:
+    portalpza: {}
+    portalpzb: {}
+    portalpzc: {}
+    portalpzd: {}
+    portalpze: {}
+    portalpzf: {}
+
+  children:
+    l2tp:
+      hosts:
+        portalpza: {}
+        portalpzf: {}
+
+    crypto:
+      hosts:
+        portalpzb: {}
+        portalpze: {}
+
+    edge:
+      hosts:
+        portalpzc: {}
+        portalpzd: {}

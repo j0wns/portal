@@ -1,0 +1,8 @@
+---
+- name: Apply common baseline to Raspberry Pi nodes
+  hosts: "{{ nodes | default('all') }}"
+  become: true
+  gather_facts: true
+
+  roles:
+    - common

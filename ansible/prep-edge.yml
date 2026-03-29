@@ -1,0 +1,8 @@
+---
+- name: Prepare edge nodes
+  hosts: "{{ nodes | default('edge') }}"
+  become: true
+  gather_facts: true
+
+  roles:
+    - edge

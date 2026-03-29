@@ -1,0 +1,5 @@
+---
+
+common_packages:
+  - iproute2
+  - linux-modules-extra-raspi

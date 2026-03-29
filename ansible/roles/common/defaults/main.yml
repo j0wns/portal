@@ -1,0 +1,21 @@
+---
+common_packages:
+  # Core utilities
+  #- ca-certificates
+  #- curl
+  - wget
+  #- vim
+  - nano
+  - htop
+  #- tmux
+
+  # Networking / diagnostics
+  #- iproute2
+  #- iputils-ping
+  - net-tools
+  #- ethtool
+  - tcpdump
+
+  # Security / crypto
+  #- gnupg
+  #- openssl

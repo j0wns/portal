@@ -1,0 +1,8 @@
+---
+- name: Prepare l2tp nodes
+  hosts: "{{ nodes | default('l2tp') }}"
+  become: true
+  gather_facts: true
+
+  roles:
+    - l2tp
